@@ -1,0 +1,1426 @@
+/* Autor: DLux
+   Kreirano: Jun 2022
+   Opis: Glavni CSS fajl
+*/
+
+/*****************************************
+Sadržaj:
+
+01. Glavni stilovi (41)
+02. Preloader (isključeno) (576)
+03. Navigacija (636)
+04. Header (768)
+05. Izaberi kurs (885)
+06. Instruktor (966)
+07. Opis (985)
+08. Za koga je kurs (1022)
+09. Details Lightbox (1048)
+10. Video (1148)
+11. Kartice (1257)
+12. Šta kažu o kursu (1316)
+13. Kontakt (1414)
+14. Footer (1488)
+15. Copyright (1539)
+16. Back To Top Button (1560)
+17. Media Queries (1581)
+******************************************/
+
+/*****************************************
+Colors:
+- Background header - light green rgba(0, 0, 0, 0.6)
+- Background body Instructor - light green #c2eebc
+- Background body - light orange #f7d6a1
+- Backgrounds buttons - dark green #1b7343
+- Headings text, navbar links - black #333
+- Body text - dark gray #555
+******************************************/
+
+
+/******************************/
+/*     01. Glavni stilovi     */
+/******************************/
+html{
+	margin: 0;
+	padding: 0;
+	background-color: blue;
+}
+
+body{
+	background-color:#333;
+	color: silver; 
+	ont: 400 1rem/1.625rem "Merriweather", sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	ackground-color: yellow; /*---- Ova boja za testiranje */
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.boja{
+	color: gold;
+}
+
+#wrapper{
+	max-width: 90%;
+	margin: auto;
+	background-color: #423842; #darkmagenta; #a39797;
+	order: 1px solid red;
+}
+
+#wrappper{
+	ax-width: 90%;
+	argin: auto;
+	background-color: #423842; #darkmagenta; #a39797;
+	order: 1px solid red;
+}
+
+.slider-pocetna{
+	ackground-color: yellow;
+	height: 500px;
+}
+
+#uvod{
+	background-color: blue;
+	display: inline-flex;
+}
+
+#uvod-slika{
+	max-width: 40%;
+}
+
+#uvod-tekst{
+	margin-left: 30px;
+	font-size: 1.4rem;
+}
+
+.naslov-centar{
+	text-align: center;
+}
+
+.sredina{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tekst-sredina{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form{
+	margin: 20px;
+}
+
+.warning{
+	color: red;
+	background-color: #dddd69;
+}/* tekst upozorenja/greške */
+
+/******************************/
+/*     02. Header     */
+/******************************/
+
+.mainHeader{
+	height: 60px;
+	background-color: rgb(176, 166, 93);
+	width: 100%;
+}
+
+header img{
+	height: 60px;
+	vertical-align: bottom;
+}
+
+#slogan{
+	float: left;
+	margin: 12px;
+	font-size: 1.5em;
+	font-weight: bold;
+	-webkit-text-stroke: 1px black;
+}
+
+#slogan p{
+	margin: 0;
+}
+
+#logoRadio{
+	float: right;
+	margin-right: 20px;
+}
+
+/******************************/
+/*     02. Navigacija     */
+/******************************/
+
+nav{
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	background-color: #362c11;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	display: block;
+	padding: 10px;
+	/*background-color: gold;*/
+	height: 20px;
+}
+
+nav ul li a:hover{}
+
+.glavniNav{
+	
+}
+
+.glavniNav a{
+   
+}
+
+.loginNav{
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	background-color: #58481c;
+}
+
+.loginNav ul{
+	float: right;
+}
+
+/******************************/
+/*     Prikaz albuma na početnoj     */
+
+.albumPrikaz{
+	width: 100%;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	ackground-color: darkred;
+	ackground-color: indigo;
+	ackground-color: midnightblue;
+	ackground-color: maroon;
+	ackground-color: seagreen; //---- Ova boja za testiranje
+	ackground-color: sienna;
+	
+}
+
+.pregledAlbuma{
+	display: flex;
+	justify-content: space-between;
+}/* info i slikaIzabranogAlbuma unutar ovoga */
+
+.slikeAlbuma{
+	ackground-color: indigo; //---- Ova boja za testiranje
+	adding: 10px;
+	
+}
+
+.slikeIzabranogAlbuma{
+	padding-right: 2%;
+}
+
+.slikeIzabranogAlbuma img{
+	vertical-align: bottom;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+}/* Pregled slika albuma izabranog izvođača */
+
+
+.slikeAlbumaPregled{
+	ackground-color: indigo; //---- Ova boja za testiranje
+	padding: 10px;
+	min-height: 76vh;
+}	/************* Klasa za pregled albuma po godini, u pretrazi i slično, kada nema dovoljno rezultata da drži body ***************/
+
+.slikeAlbuma img{
+	vertical-align: bottom;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.card{
+	display: inline-flex;
+	order: 1px solid #ccc;
+	ackground-color: #bb7b7b; /*---- Ova boja za testiranje */
+	margin: 10px;
+	border: 1px solid #a77676;
+	width: 200px;
+	
+	overflow: hidden;
+}
+
+.card-size1{
+	height: 300px;
+}
+
+.card-size2{
+	height: 330px;
+}
+
+.card img{
+	vertical-align: bottom;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+}
+
+.card-header{
+	position: relative;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.card-body{
+	position: relative;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.card-title{
+	margin: 0.4em;
+	font-size: 0.8em;
+	
+}
+
+.card-text1{
+	margin: 0.4em;
+	font-size: 0.9em;
+}
+
+.card-text2{
+	margin: 0.4em;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+
+
+h5{
+	isplay: inline;
+	
+	ackground-color: red; /*---- Ova boja za testiranje */
+}
+
+/******************************/
+/*     05. Forma za pretragu     */
+/******************************/
+
+.pretragaForma{
+	text-align: center;
+	padding: 20px;
+	/*position: relative;
+	top: 33vh;*/
+}
+
+.pretragaForma #pretraga{
+	width: 30em;
+	height: 20px;
+	border-radius: 5px;
+}
+
+.pretragaForma #pretraziButton{
+	height: 26px;
+	border: none;
+	background-color: deepskyblue;
+	border-radius: 10px;
+	vertical-align: bottom;
+}
+
+
+/******************************/
+/*     10. Footer     */
+/******************************/
+
+footer{
+    text-align: center;
+}
+
+.footer1{
+	ackground-color: #1b7343; /*---- Ova boja za testiranje */
+	width: 33%;
+	height: 160px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer1 h4{
+	margin: 0;
+}
+
+.footer2{
+    ackground-color: #a8b0d9; /*---- Ova boja za testiranje */
+	width: 33%;
+	height: 160px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: top;
+}
+
+.footer3{
+	ackground-color:#e0b53d; /*---- Ova boja za testiranje */
+	width: 33%;
+	/*height: 160px;*/
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	vertical-align: top;
+}
+
+.fa-facebook-f{
+	color: #4b4bdf;
+}
+
+.fa-twitter{
+	color: #1da1f2;
+}
+
+.fa-instagram{
+	color: #e1306c;
+}
+
+.fa-tiktok{
+	color: #080807;
+}
+
+.logoRadio img{
+	height: 150px;
+	border-radius: 14px;
+	margin: 5px;
+	vertical-align: bottom;
+}
+/******************************/
+/*     Prikaz albuma na početnoj     */
+
+
+
+.info{
+	loat: left;
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.godinaIzd{
+	font-size: 1.3rem;
+	color:red;
+}  /*---------------------------------------------- Ostaviti za sada (albumi po državi */
+/*
+.prikaz-albuma{
+	background-color: rgb(37, 22, 206);
+}/*---------------------------------------------- obrisati (oalbumu */
+
+
+.o-izvodjacu-tekst{
+	padding: 10px;
+	margin: 10px;
+	text-align: justify;
+}
+
+/******************************/
+/*     Lista pjesma     */
+
+table, th, td{
+	border-collapse: collapse;
+	border: 1px solid yellow;
+	text-align: center;
+	padding: 5px;
+	font-size: 18px;
+
+}
+
+table{
+	margin: auto;
+	loat: left;
+	max-width: 90%;
+}
+
+.listaPjesama{
+	width: 50%;
+	font-size: 0.8rem;
+}
+
+a{
+	text-decoration: none;
+	color: silver;
+}
+
+/******************************/
+/*     Ostali albumi     */
+
+.ostaliAlbumi a img:hover{
+	width: 250px;
+	transition-property: all;
+	transition-duration: 350ms;
+	transition-timing-function: linear;
+}
+
+/******************************/
+/*     tekst Pjesme     */
+
+.tekstP{
+	text-align: center;
+	font-size: 1.3rem;
+	margin: 10px;
+	padding: 10px;
+}
+
+.drzavaTekstovi{
+	text-align: left;
+}
+
+.tekstNaziv{
+	color: #ffc113;
+}
+
+.feat{
+	color: #e0b53d;
+}
+
+.tekstovi-prikaz{
+	padding: 10px;
+	text-align: left;profil
+}
+
+.bojaTekstovi{
+	background-color: #3e3c3c;
+}
+
+/******************************/
+/*     O izvođačima     */
+
+.slikaIzvodjac{
+	max-width: 80%;
+	eight: 700px;
+	ackground-color: rgb(37, 22, 206);
+	margin: auto;
+}
+
+.slikaIzvodjac img{
+	idth: 80%;
+	max-height: 30em;
+}
+
+/******************************/
+/* Forme - registracija */
+/******************************/
+
+
+.profilBocno{
+	width: 20%;
+	ackground-color: cyan;
+	float: right;
+	margin-right: 10px;
+	border: ridge;
+}
+
+.profilBocno img{
+	width:100%;
+	border-radius: 4px;
+	max-height: 945px;
+}
+
+main{
+	adding-top: 10px;
+    margin: auto;
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+.profilCentar{
+	width: 75%;
+	ackground-color: aquamarine;
+	float: left;
+	margin-left: 10px;
+	padding: 10px;
+	eight: 73vh;
+}
+
+.profilPun{
+	width: 95%;
+	background-color: aquamarine;
+	margin: auto;
+	padding: 10px;
+}
+
+.ocjenjeniAlbumi{
+	width: 49.5%;
+	ackground-color: blue;
+	float: left;
+	border-right: 1px solid;
+	argin-top: 50px;
+	height: 52vh;
+	border: outset 1px;
+	overflow-y: scroll;
+}
+
+.ocjenjeniAlbumi ol li{
+	padding-right: 15px;
+}
+
+.komentarisaniAlbumi{
+	width: 49.5%;
+	ackground-color: white;
+	float: right;
+	argin-top: 50px;
+	height: 52vh;
+	border: inset 1px;
+	overflow-y: scroll;
+}
+
+.komentarisaniAlbumi ol li{
+	padding-right: 15px;
+}
+
+.profilCentar ol{
+	text-align: justify;
+}
+
+.podebljano{
+	font-weight: bold;
+}
+
+.login{
+	border: 1px solid;
+	width: 300px;
+	padding: 10px;
+	margin: auto;
+}
+
+.zabSifra{
+	font-size:0.8em;
+}
+
+.streams{
+	max-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.streams img{
+	max-height: 70px;
+	background-color: white;
+	border-radius: 7px;
+}
+
+.recenzija{
+	display: flex;
+	justify-content: center;
+}
+
+.recenzija textarea{
+	width: 700px;
+	height: 150px;
+}
+
+.recenzija input[type=submit]{
+	width: 700px;
+	height: 30px;
+}
+
+
+.prikazKomentara{
+	width: 700px;
+	border: 1px solid silver;
+	position: relative;
+	
+}
+
+.prikazKomentara h4 a{
+	color: gold;
+	margin-left: 10px;
+	position: relative;
+	top: -5px;
+	left: 70px;
+}
+
+.prikazKomentara img{
+	height: 50px;
+	max-width: 70px;
+	position: absolute;
+}
+
+.prikazKomentara .vrijemeRecenzije{
+	
+	color: #dbc96b;
+}
+
+.prikazKomentara .razmakIzmedju{
+	display: flex;
+	justify-content: space-between;
+}
+
+.prikazKomentara p{
+	padding: 0 10px 10px 10px;
+	text-align: center;
+}
+/******************************/
+
+
+/******************************/
+/*     00. Ocjene     */
+/******************************/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.ratings{
+	/*position: relative;
+	right: 5%;*/
+	loat: right;
+	/*background-color: olive;*/
+    argin-right: 8%;
+    padding-left: 0px;
+	idth: 28%;
+	border: 1px solid yellow;
+	background-color: darkmagenta;
+	padding: 20px;
+	margin: auto;
+	max-width: 600px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: grid;
+}
+
+
+.container{
+	position: relative;
+	idth: 400px;
+	ackground: #111;
+	padding: 20px 30px;
+	order: 1px solid #444;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container .post{
+display: none;
+}
+
+.container .text{
+	font-size: 25px;
+	olor: #666;
+	font-weight: 500;
+}
+
+.container .edit{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 16px;
+	olor: #666;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.container .star-widget input{
+	display: none;
+}
+
+.star-widget label{
+font-size: 40px;
+color: #444;
+padding: 10px;
+float: right;
+transition: all 0.2s ease;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+
+.star-widget input:checked ~ label{
+	color: #fd4;
+}
+
+.star-widget input#rate-5:checked ~ label{
+	color: #fe7;
+	text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked ~ form header:before{
+	content: "Vaša ocjena је 1 ";
+  }
+#rate-2:checked ~ form header:before{
+content: "Vaša ocjena је 2 ";
+}
+#rate-3:checked ~ form header:before{
+content: "Vaša ocjena је 3 ";
+}
+#rate-4:checked ~ form header:before{
+content: "Vaša ocjena је 4 ";
+}
+#rate-5:checked ~ form header:before{
+content: "Vaša ocjena је 5";
+}
+#rate-6:checked ~ form header:before{
+content: "Vaša ocjena је 6 ";
+}
+#rate-7:checked ~ form header:before{
+content: "Vaša ocjena је 7 ";
+}
+#rate-8:checked ~ form header:before{
+content: "Vaša ocjena је 8 ";
+}
+#rate-9:checked ~ form header:before{
+content: "Vaša ocjena је 9 ";
+}
+#rate-10:checked ~ form header:before{
+content: "Vaša ocjena је 10 ";
+}
+
+.container form{
+	display: none;
+}
+input:checked ~ form{
+display: block;
+}
+form header{
+width: 100%;
+font-size: 25px;
+color: #fe7;
+font-weight: 500;
+margin: 5px 0 20px 0;
+text-align: center;
+transition: all 0.2s ease;
+}
+
+form .btn{
+height: 45px;
+width: 100%;
+margin: 15px 0;
+}
+form .btn button{
+height: 100%;
+width: 100%;
+border: 1px solid #444;
+outline: none;
+background: #222;
+color: #999;
+font-size: 17px;
+font-weight: 500;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+form .btn button:hover{
+background: #1b1b1b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************/
+/*     12. Slider na vrhu   */
+/*******************************/
+.header .slider-container {
+	position: relative;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testimonial-text {
+	font-style: italic;
+}
+
+.testimonial-author {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.625rem;
+}
+----------------------------------------------------------
+
+.slider-2 {
+	padding-top: 2.5rem;
+	padding-bottom: 4rem;
+	background-color: #a8b0d9;
+}
+
+.slider-2 h3 {
+	margin-bottom: 3.75rem;
+	text-align: center;
+}
+
+.slider-2 .slider-container {
+	position: relative;
+	height: 200px;
+	ackground-color: antiquewhite;
+}
+
+.slider-2 .swiper-container {
+	position: static;
+	width: 88%;
+	text-align: center;
+}
+
+.slider-2 .image-wrapper {
+	width: 6rem;
+	margin-right: auto;
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	height: 100%;
+	margin-right: 7.5rem;
+}
+
+.slider-2 .image-wrapper img {
+	border-radius: 0.25rem;
+	height: 100%;
+	max-width: 200%;
+}
+
+.slider-2 .testimonial-text {
+	margin-bottom: 0.5rem;
+}
+
+.slider-2 .testimonial-author {
+	color: #333;
+}
+
+.slider-2 .swiper-button-prev,
+.slider-2 .swiper-button-next {
+	width: 1.125rem;
+}
+
+.slider-2 .swiper-button-prev:focus,
+.slider-2 .swiper-button-next:focus {
+	/* even if you can't see it chrome you can see it on mobile device */
+	outline: none;
+}
+
+.slider-2 .swiper-button-prev {
+	left: -0.5rem;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23505c67'%2F%3E%3C%2Fsvg%3E");
+	background-size: 1.125rem 1.75rem;
+}
+
+.slider-2 .swiper-button-next {
+	right: -0.5rem;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23505c67'%2F%3E%3C%2Fsvg%3E");
+	background-size: 1.125rem 1.75rem;
+}
+
+.slider-2 .swiper-container {
+	width: 90%;
+	height: 100%;
+	ackground-color: aquamarine;
+}
+
+.slider-2 .text-wrapper {
+	margin-top: 0;
+}
+
+.razmak-id h2,
+.razmak-id h3{
+	margin-top: 50px;
+}
+/---------------------------------------------
+
+
+/*****************************/
+/*     17. Media Queries     */
+/*****************************/	
+/* Max-width width 330px */
+@media screen and (min-width: 330px) and (max-width: 767px){
+	/* Popust */
+	.popust-lijevo{
+		float: none;
+		margin: auto;
+	}
+	
+	.popust-desno{
+		float: none;
+		margin: auto;
+	}
+	/* kraj Popust */
+}
+/* kraj min-width width 330px */
+
+/* Min-width width 768px */
+@media (min-width: 768px) {
+	
+	/* Glavni stilovi */
+	.p-heading {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/* kraj Glavni stilovi */
+
+
+	/* Header */
+	.header {
+		padding-top: 9rem;
+	}
+
+	.header h1 {
+		font-size: 4rem;
+		line-height: 4.875rem;
+		letter-spacing: -0.3px;
+	}
+
+	.header .btn-solid-lg {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	.header .outer-container {
+		bottom: -4rem;
+	}
+
+	.header .swiper-button-prev {
+		left: 1.5rem;
+	}
+	
+	.header .swiper-button-next {
+		right: 1.5rem;
+	}
+	/* kraj header */
+
+
+	/* Izaberi kurs */
+	.osnove1 {
+		padding-top: 9rem;
+	}
+	/* kraj Izaberi kurs */
+
+
+	/* Opis */
+	.osnove2 h2 {
+		width: 41rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.osnove2 .list-unstyled .bullet {
+		width: 3.25rem;
+		height: 3.25rem;
+		margin-right: 1rem;
+		font-size: 1.375rem;
+		line-height: 3.25rem;
+	}
+	/* kraj Opis */
+
+
+
+}
+/* kraj min-width width 768px */
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	
+	/* Navigation */
+	.navbar-custom {
+		padding: 2.125rem 1.5rem 2.125rem 2rem;
+        background: transparent;
+		box-shadow: none;
+	}
+	
+	.navbar-custom .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		padding: 0.25rem 0.75rem;
+		color: #eee;
+	}
+
+	.navbar-custom.top-nav-collapse {
+        padding: 0.5rem 1.5rem 0.5rem 2rem;
+		background-color: #fff;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.05);
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link {
+		color: #333;
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+		color: #1b7343;
+	}
+
+	.navbar-custom .dropdown-menu {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-top: 0.75rem solid rgba(0, 0, 0, 0);
+		border-radius: 0.25rem;
+	}
+
+	.navbar-custom.top-nav-collapse .dropdown-menu {
+		border-top: 0.5rem solid rgba(0, 0, 0, 0);
+		box-shadow: 0 0.375rem 0.375rem 0 rgba(0, 0, 0, 0.02);
+	}
+
+	.navbar-custom .dropdown-item {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.navbar-custom .dropdown-divider {
+		width: 84%;
+	}
+
+	.navbar-custom .social-icons {
+		display: block;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+	}
+
+	.navbar-custom .fa-stack {
+		width: 2em;
+		margin: auto;
+		font-size: 0.75rem;
+	}
+	
+	.navbar-custom .fa-stack-2x {
+		color: #1b7343;
+		transition: all 0.2s ease;
+	}
+	
+	.navbar-custom .fa-stack-1x {
+		color: #fff;
+		transition: all 0.2s ease;
+	}
+
+	.navbar-custom .fa-stack:hover .fa-stack-2x {
+		color: #ebe8e2;
+	}
+
+	.navbar-custom .fa-stack:hover .fa-stack-1x {
+		color: ##1b7343;
+	}
+	/* kraj navigation */
+
+
+	/* Glavni stilovi */
+	.p-heading {
+		width: 65%;
+	}
+	/* kraj Glavni stilovi */
+
+
+	/* Header */
+	.header h1,
+	.header .p-large {
+		width: 47rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.header .swiper-button-prev {
+		left: 3rem;
+	}
+	
+	.header .swiper-button-next {
+		right: 3rem;
+	}
+	/* kraj header */
+
+
+	/* Izaberi kurs */
+	.osnove1 {
+		padding-top: 10rem;
+	}
+	/* kraj Izaberi kurs */
+
+
+	/* Instruktor */
+	.osnove5 {
+		padding-bottom: 4.5rem;
+	}
+
+	.osnove5 img {
+		margin-bottom: 0;
+	}
+	/* kraj Instruktor */
+
+
+	/* Opis */
+	.osnove2 {
+		padding-top: 4.5rem;
+		padding-bottom: 3.5rem
+	}
+	/* kraj Opis */
+
+
+	/* Za koga je kurs */
+	.osnove3 {
+		padding-top: 3.5rem;
+		padding-bottom: 4.5rem;
+	}
+
+	.osnove3 .text-container {
+		margin-bottom: 0;
+	}
+	/* kraj Za koga je kurs */
+
+
+	/* Details Lightbox */
+	.lightbox-basic {
+		max-width: 62.5rem;
+		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+	}
+
+	.lightbox-basic .image-container {
+		max-width: 100%;
+		margin-right: 2rem;
+		margin-bottom: 0;
+		margin-left: 0.5rem;
+	}
+	
+	.lightbox-basic h3 {
+		margin-top: 0.5rem;
+	}
+	/* kraj details lightbox */
+
+
+	/* Video */
+	.osnove4 {
+		padding-top: 4.5rem;
+		padding-bottom: 3.5rem;
+	}
+	/* kraj video */
+
+
+	/* Kartice */
+	.cards {
+		padding-top: 3.5rem;
+		padding-bottom: 3rem;
+	}
+
+	.cards .card {
+		display: inline-block;
+		width: 17.75rem;
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	.cards .card:nth-child(3n+2) {
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+	/* kraj Kartice */
+
+
+	/* Šta kažu o kursu */
+	.slider-2 {
+		padding-bottom: 9rem;
+		background-color: #e1fff1 /*#e1f4ff;*/
+	}
+
+	.slider-2 h3 {
+		width: 37.5rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.slider-2 .swiper-container {
+		width: 92%;
+		text-align: left;
+	}
+
+	.slider-2 .image-wrapper {
+		float: left;
+		width: 6rem;
+		margin-bottom: 0;
+	}
+
+	.slider-2 .text-wrapper {
+		max-width: 100%;
+		margin-left: 7.375rem;
+	}
+
+	.slider-2 .swiper-button-prev {
+		left: 0;
+	}
+	
+	.slider-2 .swiper-button-next {
+		right: 0;
+	}
+	/* kraj Šta kažu o kursu */
+
+
+	/* Date */
+	.basic-5 h2 {
+		width: 70%;
+	}
+	/* kraj date */
+
+
+	/* Kontakt */
+	.form-3 .text-container {
+		margin-bottom: 0;
+	}
+	/* kraj Kontakt */
+
+}
+/* kraj min-width width 992px */
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	
+	/* Header */
+	.header {
+		/*padding-bottom: 31rem;*/
+	}
+
+	.header .outer-container {
+		width: 69.375rem;
+		bottom: -6rem;
+	}
+
+	.header .swiper-container {
+		width: 100%;
+	}
+
+	.header .swiper-button-prev {
+		left: -2.25rem;
+	}
+	
+	.header .swiper-button-next {
+		right: -2.25rem;
+	}
+	/* kraj header */
+	
+
+	/* Izaberi kurs */
+	.osnove1 {
+		padding-top: 12rem;
+	}
+
+	.osnove1 .text-container {
+		margin-top: 1rem;
+		margin-right: 3.5rem;
+	}
+
+	.osnove1 form {
+		margin-left: 1.5rem;
+	}
+	/* kraj Izaberi kurs */
+
+
+	/* Instruktor */
+	.osnove5 .text-container {
+		margin-top: 3.125rem;
+		margin-left: 3.5rem;
+	}
+	/* kraj Instruktor */
+
+
+	/* Opis */
+	.osnove2 .list-unstyled.first {
+		margin-right: 1.625rem;
+	}
+
+	.osnove2 .list-unstyled.second {
+		margin-left: 1.625rem;
+	}
+	/* kraj Opis */
+
+
+	/* Za koga je kurs */
+	.osnove3 .text-container {
+		margin-top: 2.5rem;
+		margin-right: 3.5rem;
+	}
+	/* kraj Instruktor */
+
+
+	/* Kartice */
+	.cards .card {
+		width: 21rem;
+	}
+
+	.cards .card:nth-child(3n+2) {
+		margin-right: 2.875rem;
+		margin-left: 2.875rem;
+	}
+	/* kraj Kartice */
+
+
+	/* Šta kažu o kursu */
+	.slider-2 .swiper-container {
+		width: 90%;
+		height: 100%;
+		background-color: aquamarine;
+	}
+
+	.slider-2 .text-wrapper {
+		margin-top: 0;
+	}
+	/* kraj Šta kažu o kursu */
+
+
+	/* Kontakt */
+	.form-3 .text-container {
+		margin-top: 2.25rem;
+		margin-right: 3.5rem;
+	}
+	/* kraj Kontakt */
+
+
+	/* Footer */
+	.footer .footer-col.first {
+		margin-right: 1.5rem;
+	}
+
+	.footer .footer-col.second {
+		margin-left: 3rem;
+	}
+
+	.footer .footer-col.third {
+		margin-left: 2.75rem;
+	}
+
+	.footer .footer-col.fourth {
+		margin-left: 1.5rem;
+	}
+	/* kraj footer */
+
+}
+/* kraj min-width width 1200px */
